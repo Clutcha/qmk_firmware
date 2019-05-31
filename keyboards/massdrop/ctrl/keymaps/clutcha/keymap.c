@@ -460,13 +460,13 @@ led_instruction_t led_game_instructions_three[] = {
 };
 
 led_instruction_t led_instructions_dark_side_of_the_moon[] = {
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 12582944, .id1 = 66847168, .id2 = 1879081084, .id3 = 110, .r = 255, .g = 255, .b = 255 },
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .id0 = 65472, .r = 255, .g = 0, .b = 0 },
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .id0 = 4278190080, .id1 = 1, .id3 = 1048576, .r = 255, .g = 165, .b = 0 },
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .id1 = 261632, .id3 = 2097152, .r = 255, .g = 255, .b = 0 },
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .id1 = 2080374784, .id3 = 4194304, .r = 0, .g = 255, .b = 0 },
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .id2 = 3968, .r = 0, .g = 0, .b = 255 },
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .id2 = 8323072, .r = 128, .g = 0, .b = 128 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .id0 = 12582944, .id1 = 66847168, .id2 = 1879081084, .id3 = 110, .r = 255, .g = 255, .b = 255 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER | LED_FLAG_USE_PATTERN, .id0 = 65472, .id3= 1040384, .r = 255, .g = 0, .b = 0 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER | LED_FLAG_USE_PATTERN, .id0 = 4278190080, .id1 = 1, .id3 = 1048576, .r = 232, .g = 97, .b = 0 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER | LED_FLAG_USE_PATTERN, .id1 = 261632, .id3 = 2097152, .r = 255, .g = 255, .b = 0 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER | LED_FLAG_USE_PATTERN, .id1 = 2080374784, .id3 = 4194304, .r = 0, .g = 255, .b = 0 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER | LED_FLAG_USE_PATTERN, .id2 = 3968, .r = 0, .g = 0, .b = 255 },
+  { .flags = LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER | LED_FLAG_USE_PATTERN, .id2 = 8323072, .id2 = 268369920, .r = 128, .g = 0, .b = 128 },
   {.end = 1 }
 };
 
