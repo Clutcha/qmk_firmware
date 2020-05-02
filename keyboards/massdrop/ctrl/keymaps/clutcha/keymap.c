@@ -260,9 +260,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
             return false;
         case L_T_GCM:
-            if (record->event.pressed) {
-              led_game_colors = !led_game_colors;
-            }
+            // if (record->event.pressed) {
+            //   led_game_colors = !led_game_colors;
+            // }
             return false;
         default:
             return true; //Process all other keycodes normally
@@ -471,8 +471,8 @@ led_instruction_t led_instructions_dark_side_of_the_moon[] = {
 };
 
 void *led_instruction_list[] = {
-    led_instructions_dark_side_of_the_moon,
     led_instructions_three,
+    led_instructions_dark_side_of_the_moon,
     led_instructions_default,
 };
 

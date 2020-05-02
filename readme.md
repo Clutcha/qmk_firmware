@@ -1,7 +1,25 @@
 # Quantum Mechanical Keyboard Firmware
 
+## How to use:
+
+#### Setup qmk for the first time:
+`./util/qmk_install.sh`
+
+#### To build:
+`make massdrop/ctrl:clutcha`
+
+Firmware loader:
+https://github.com/Massdrop/mdloader/...
+
+#### To flash firmware to board:
+`./mdloader_mac --first --download FILE_NAME --restart`
+
+Hold down Fn + B for a few seconds to get the controller into DFU mode so you can flash the firmware
+
+---
+
 ## This is a fork of the massdrop fork of qmk
-This fork has specific modifications for the Massdrop ALT. 
+This fork has specific modifications for the Massdrop ALT.
 Added glitter/cloud effect, customized my personal keymap, and added funcitonality for a 'game mode' led map. The 'game mode' for leds keeps the key layout the same but can change RGB layouts with a keycode.
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
