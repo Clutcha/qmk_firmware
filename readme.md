@@ -8,8 +8,10 @@
 #### To build:
 `make massdrop/ctrl:clutcha`
 
+Output: massdrop_ctrl_clutcha.hex
+
 Firmware loader:
-https://github.com/Massdrop/mdloader/...
+https://github.com/Massdrop/mdloader
 
 #### To flash firmware to board:
 `./mdloader_mac --first --download FILE_NAME --restart`
