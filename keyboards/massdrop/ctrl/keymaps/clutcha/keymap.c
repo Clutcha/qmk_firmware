@@ -32,6 +32,8 @@ enum ctrl_keycodes {
 };
 
 #define TG_NKRO MAGIC_TOGGLE_NKRO //Toggle 6KRO / NKRO mode
+#define TG_WIN MAGIC_SWAP_ALT_GUI //Swap Alt and GUI on both sides (for macOS)
+#define TG_MAC MAGIC_UNSWAP_ALT_GUI //Unswap Left Alt and Left GUI
 
 keymap_config_t keymap_config;
 
@@ -47,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT(
         KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,            KC_MUTE, KC_TRNS, KC_TRNS, \
         KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_MPLY, KC_MSTP, KC_VOLU, \
-        L_T_BR,   L_PSD,   L_BRI,   L_PSI,   KC_TRNS, KC_TRNS, KC_TRNS, U_T_AUTO,U_T_AGCR,KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_MPRV, KC_MNXT, KC_VOLD, \
-        L_T_GLIT, L_PTP,   L_BRD,   L_PTN,   L_SC_P,  L_T_PTD, L_SC_P,  L_I_P,   L_I_N,   KC_TRNS, KC_TRNS, KC_TRNS, L_T_GCM, \
-        L_GLITSM, L_T_MD,  L_T_ONF, KC_TRNS, KC_TRNS, MD_BOOT, TG_NKRO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                              KC_F16,  \
+        L_T_BR,   L_PSD,   L_BRI,   L_PSI,   KC_TRNS, KC_TRNS, KC_TRNS, U_T_AUTO,U_T_AGCR,KC_TRNS, KC_TRNS, KC_TRNS, L_T_GCM, KC_TRNS,   KC_MPRV, KC_MNXT, KC_VOLD, \
+        L_T_GLIT, L_PTP,   L_BRD,   L_PTN,   L_SC_P,  L_T_PTD, L_SC_P,  L_I_P,   L_I_N,   KC_TRNS, KC_TRNS, KC_TRNS, TG_MAC, \
+        L_GLITSM, L_T_MD,  L_T_ONF, KC_TRNS, KC_TRNS, MD_BOOT, TG_NKRO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TG_WIN,                              KC_F16,  \
         KC_TRNS,  KC_TRNS, KC_TRNS,                   KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,            KC_F13,  KC_F14,  KC_F15 \
     ),
     /*

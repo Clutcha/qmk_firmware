@@ -16,7 +16,7 @@ https://github.com/Massdrop/mdloader
 #### To flash firmware to board:
 `./mdloader_mac --first --download FILE_NAME --restart`
 
-Hold down Fn + B for a few seconds to get the controller into DFU mode so you can flash the firmware
+Hold down Fn + B for few seconds, to get the controller into DFU mode, so you can flash the firmware.
 
 ---
 
